@@ -1,0 +1,47 @@
+
+.page__body {
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+.hero-section {
+    background-color: #23424A;
+    color: #ffffff;
+    padding: 148px 0;    
+}
+
+.hero-text {
+    width: 60%;
+    max-width: 75ch;
+    padding-left: 9%;
+}
+
+.hero-text__title {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.17;
+    margin: 0.5em 0;
+}
+
+.hero-text__text {
+    font-weight: 400;
+    font-size: 1.3125rem;
+    line-height: 1.52;
+    color: rgba(255, 255, 255, 0.85);
+    padding-bottom: 2em;
+}
+
+.hero-text__button {
+    border-radius: 100px;
+    font-weight: 700;
+    color: #072A2D;
+    background-color: #38CFD9;
+    font-size: 1.3125rem;
+    line-height: 150.19%;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 48px;
+    display: inline-block;
+}
