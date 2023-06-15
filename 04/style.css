@@ -1,0 +1,88 @@
+.html {
+    box-sizing: border-box;
+}
+
+.page__body {
+    min-height: 100vh;
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1.3125rem;
+}
+
+.hero-section {
+    background-color: #23424A;
+    color: #ffffff;
+    padding: 148px 0;    
+}
+
+.hero-text {
+    width: 60%;
+    max-width: 75ch;
+    padding-left: 10%;
+}
+
+.hero-text__title {
+    font-weight: 900;
+    font-size: 3rem;
+    line-height: 1.17;
+    margin: 0.5em 0;
+}
+
+.hero-text__text {
+    line-height: 1.52;
+    color: rgba(255, 255, 255, 0.85);
+    padding-bottom: 2em;
+}
+
+.hero-text__button {
+    border-radius: 100px;
+    font-weight: 700;
+    color: #072A2D;
+    background-color: #38CFD9;
+    line-height: 150.19%;
+    letter-spacing: 0.05rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .85em 2.3em;
+    display: inline-block;
+}
+
+.features {
+    padding: 3em 0;
+}
+
+.features__inner {
+    width: 80%;
+    margin: 0 auto;
+    /*properly I need a max-width here but then I also need the same max-width on the earlier section */
+}
+
+.features_teal-bkgr {
+    background-color: #136C72;
+    color: #ffffff;
+}
+
+.features__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.features__item {
+    text-align: center;
+    max-width: 500px;
+}
+
+.features__feature-title {
+    font-weight: 900;
+    font-size: 2.25rem;
+    line-height: 1.17;
+  
+}
+
+.features__feature-title_violet {
+    color: #87629A;
+}

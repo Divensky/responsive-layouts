@@ -22,6 +22,6 @@ I also duplicated some of the color details according to Figma file (including c
 
 I had to make adjustments for the browser styles which were adding margins between my paragraphs. Kevin did not seem to have done that and I wonder why. 
 
-I think that's all the key differences but I am going to watch his solution again tomorrow to freshly see if I'd missed anything else. 
+I think that's all the key differences. I will progress on the course to see if any other differences have an explanation.  
 
 
