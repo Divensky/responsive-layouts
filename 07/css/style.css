@@ -1,0 +1,158 @@
+:root {
+    --light-color: #F3EED9;
+    --brown-color: #824936;
+    --dark-color: #222C2A;
+}
+
+/* Fonts */
+
+/* roboto-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: url('~/fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* roboto-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~/fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* playfair-display-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 400;
+    src: url('~/fonts/playfair-display-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+  /* playfair-display-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Playfair Display';
+    font-style: normal;
+    font-weight: 700;
+    src: url('~/fonts/playfair-display-v30-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+
+/* Common/global/generic styles */
+
+img {
+    max-width: 100%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif; 
+    font-weight: 400;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    color: var(--dark-color);
+}
+
+.container {
+    margin: 0 auto;
+    width: min(80%, 1128px);
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex_desktop-two-column {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 5%;
+
+    @media screen and (min-width: 900px) {
+    flex-direction: row;
+  }
+}
+
+.section-header {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-top: 0;
+}
+
+/* Header styles */
+.header {
+    background-color: var(--light-color);
+      
+}
+
+.header__flex {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 660px;
+}
+
+.header__subtitle {
+    text-transform: uppercase;
+    font-weight: 300;
+    font-size: 1.1rem;
+    letter-spacing: 1ch;
+}
+
+.header__title {
+    color: var(--brown-color);
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 0.9;
+    max-width: 25ch;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Section styles */
+
+.section {
+    padding: 3em 0;
+}
+
+.section-no-image__header {
+    color: var(--brown-color);
+    text-align: center;
+}
+
+.section-with-image {
+    color: var(--light-color);
+}
+
+.section_dark-bkgr {
+    background-color: var(--dark-color);
+}
+
+.section_brown-bkgr {
+    background-color: var(--brown-color);
+}
+
+@media screen and (min-width: 900px) {
+    .section-reverse-order__img {
+        order: 1;
+      }
+
+    .section-reverse-order__text-wrapper {
+        order: 2;
+    }
+
+    .text-wrapper, .img-wrapper {
+        width: 50%;
+    }
+
+    .header__title {
+        font-size: 3.8rem;
+    }
+  }
